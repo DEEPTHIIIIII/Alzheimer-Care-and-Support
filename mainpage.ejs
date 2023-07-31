@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN PAGE</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://edge.mwallpapers.com/photos/celebrities/resolutions/midnight-star-2880x1620-wallpaper-android-iphone-hd-wallpaper-background-downloadhd-wallpapers-desktop-background-android-iphone-1080p-4k-kvkx0.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .form-container {
+            margin-top: 20px; /* Add 20px margin to the top */
+            width: 850px; /* Set width to 850px */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.8); /* Opaque black background */
+            font-family: monospace; /* Use monospace font */
+            font-weight: bold; /* Set font weight to bold */
+            font-size: x-large;
+        }
+
+        .form-group {
+            margin-bottom: 25px; /* Increase spacing between input fields and form container */
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: white; /* Set text color to white */
+            background-color: rgba(255, 255, 255, 0.2); /* Transparent white background for input fields */
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .btn {
+            background-color: lavender;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .check-progress-button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .check-progress-button {
+            background-color: lightseagreen; /* Blue button color */
+            color: #fff;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--<div style="display: flex; text-align: center;align-items: center;">
+        <a href="/checkprogress"><button class="btn">Check Progress</button></a>
+    </div>-->
+    
+
+    <div class="form-container">
+        <div class="check-progress-button-container">
+            <form action="/checkprogresss" method="post">
+                    <input type="submit" class="check-progress-button" style="font-family: monospace;font-weight: bolder;" value="Check Progress">
+
+            </form>
+            <!--<a href="/checkprogress">
+                <button class="check-progress-button" style="font-family: monospace;font-weight: bolder;"><br/>Check Progress</button>
+            </a> -->
+        </div>
+        <h2 style="text-align: center; color: white;">OR<br/>Fill The Following Details</h2>
+        <form action="/checkprogresss" method="post">
+            <div style="display: flex;">
+                <div class="form-group" style="flex: 1; margin-right: 10px;"> <!-- Add right margin to create spacing between input fields -->
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div class="form-group" style="flex: 1; margin-right: 10px;"> <!-- Add right margin to create spacing between input fields -->
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label for="bloodGroup">Blood Group</label>
+                    <input type="text" id="bloodGroup" name="bloodGroup" required>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div class="form-group" style="flex: 1; margin-right: 10px;"> <!-- Add right margin to create spacing between input fields -->
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label>Gender</label>
+                    <select name="gender" required>
+                        <option value="male" style="color: black !important">Male</option>
+                        <option value="female" style="color: black !important">Female</option>
+                        <option value="others" style="color: black !important">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="medicalCondition">Description of Medical Condition</label>
+                <textarea id="medicalCondition" name="medicalCondition" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="mriScan">Upload MRI Scan</label>
+                <input type="file" id="mriScan" name="mriScan" required>
+            </div>
+            <button type="submit" class="btn" style="color: black;">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

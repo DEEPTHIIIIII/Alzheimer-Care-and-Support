@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Welcome page</title>
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+                    <%- include("header") %>
+                    <style>
+                      body{
+                        /*background: linear-gradient(#0081C9, #99DBF5, #A7ECEE);*/
+                        background-image: url('https://edge.mwallpapers.com/photos/celebrities/resolutions/midnight-star-2880x1620-wallpaper-android-iphone-hd-wallpaper-background-downloadhd-wallpapers-desktop-background-android-iphone-1080p-4k-kvkx0.png');
+                        background-size: cover;
+                        background-position: center;
+                        color: white;
+                      }
+                      /* Styling for the carousel container */
+                            #myCarousel {
+                              width: 100%;
+                              max-width: 800px; /* You can adjust the width as needed */
+                              margin: 0 auto;
+                            }
+
+                            /* Styling for the carousel slides */
+                            .carousel-item {
+                              text-align: center;
+                              background-color: #f0f0f0; /* You can set a background color for the slides */
+                            }
+
+                            /* Styling for the carousel caption */
+                            .carousel-caption {
+                              background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for caption */
+                              color: #fff;
+                              padding: 10px;
+                            }
+
+                            /* Styling for the carousel indicators (dots) */
+                            .carousel-indicators {
+                              bottom: 100px; /* Adjust the position of the indicators */
+                              top:360px;
+                          
+  
+                            }
+
+                            /* Styling for the active indicator (dot) */
+                            .carousel-indicators .active {
+                              background-color: #007bff; /* Active indicator color */
+                            }
+
+                            /* Styling for the carousel navigation arrows (optional) */
+                            .carousel-control-prev,
+                            .carousel-control-next {
+                              width: 30px;
+                              height: 30px;
+                              background-color: #007bff; /* Arrow background color */
+                              color: #fff; /* Arrow color */
+                              border-radius: 50%;
+                              font-size: 24px;
+                              line-height: 30px;
+                              text-align: center;
+                              cursor: pointer;
+                            }
+
+                            /* Styling for the carousel navigation arrow icons (optional) */
+                            .carousel-control-prev-icon,
+                            .carousel-control-next-icon {
+                              display: inline-block;
+                              background: no-repeat 50% / 50% 50%;
+                            }
+
+                            /* Additional styling for the carousel images (optional) */
+                            .carousel-item img {
+                              width: 100%; /* Make images fill the slide width */
+                              height: 100%; /* Maintain aspect ratio */
+                            }
+
+                            /* Additional styling for the "Sign up today" button (optional) */
+                            .carousel-caption .btn {
+                              margin-top: 10px;
+                            }
+
+                            /* Styling for the carousel slide indicator numbers (optional) */
+                            .carousel-indicators button {
+                              width: 10px;
+                              height: 10px;
+                              border-radius: 50%;
+                              background-color: #888; /* Indicator number color */
+                              border: none;
+                            }
+
+                            /* Styling for the active slide indicator number (optional) */
+                            .carousel-indicators .active {
+                              background-color: #000; /* Active indicator number color */
+                            }
+                            /* Assuming you want the width to be 8.5 inches */
+                            #myCarousel .carousel-item img {
+                              width: 900px;
+                              height: 400px;
+                            }
+    
+                              .button-container {
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 20px;
+                              }
+
+                              .button {
+                                  padding: 12px 24px;
+                                  border: none;
+                                  border-radius: 4px;
+                                  font-size: 16px;
+                                  cursor: pointer;
+                                  transition: background-color 0.3s;
+                              }
+
+                              .login-btn {
+                                  background-color: #007bff; /* Blue button color */
+                                  color: #fff;
+                              }
+
+                              .signup-btn {
+                                  background-color: #28a745; /* Green button color */
+                                  color: #fff;
+                              }
+
+                              .button:hover {
+                                  background-color: #0056b3; /* Darker shade of the button color on hover */
+                              }
+                              #intro{
+                                padding-left: 120px;
+                                padding-right: 120px;
+                              }
+                              
+                    </style>
+</head>
+<body>
+                  <div style="display:flex; justify-content: center;">
+                    <p id="intro" style="font-family: monospace; font-size: large;font-weight: bolder;color: white;">Welcome to Alzheimer's Support aand Care Hub
+                      We are dedicated to raising awareness, providing support, and promoting early detection of Alzheimer's disease. 
+                      Our mission is to empower individuals, families, and caregivers with the knowledge 
+                      and resources they need to navigate the challenges of Alzheimer's with compassion and strength.Early detection 
+                      and timely care can make a significant difference in the lives of those affected by Alzheimer's. 
+                      Explore our website to learn more about Alzheimer's detection, effective care strategies, and find a supportive community.Together, we can make a difference in the lives of those impacted by this challenging disease.
+                      </p>
+                  </div>
+                
+                    <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1" top="auto"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true" top="auto"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="" top="auto"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item">
+                          <img src="https://stillwaterseniorliving.com/wp-content/uploads/2021/01/hero-Alzheimers-Caregivers-Support.jpg" class="d-block" alt="Image description" id="image" width="900" height="400">
+                         
+                            <div class="carousel-caption text-start">
+                              <h1>You are not alone</h1>
+                              <p class="opacity-75">We are here to support you in every step you take on this journey</p>
+                              <p><a class="btn btn-lg btn-primary" href=/signup>Sign Up</a></p>
+                              
+                            </div>
+                           
+                          </div>
+                        
+                        </div>
+                        <div class="carousel-item active">
+                          <img id="image" src="https://www.alzalaska.org/wp-content/uploads/2021/12/find-caregiver-support-group.jpg" width="900" height="400">
+                          <div class="container">
+                            <div class="carousel-caption">
+                              <h1>Learning is the first step</h1>
+                              <p class="opacity-75">Delve into the world of Alzheimer's disease and expand your understanding by exploring further.</p>
+                              <p><a class="btn btn-lg btn-primary" href="https://www.nia.nih.gov/health/what-alzheimers-disease#:~:text=Alzheimer's%20disease%20is%20a%20brain,appear%20in%20their%20mid%2D60s.">Learn more</a></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://i.pinimg.com/564x/42/a0/29/42a0298c3b6fc567fd5a747957f82301.jpg" class="d-block" alt="Image description" id="image" width="900" height="400">
+                          <div class="container">
+                            <div class="carousel-caption text-end">
+                              <h1>Love,Laughter and Spirit</h1>
+                              <p class="opacity-75">We're united in the mission to improve the lives of those living with Alzheimer's</p>
+                              <p><a class="btn btn-lg btn-primary" href="https://chat.whatsapp.com/CqPc1IuiyeZHMRaAbPczDF">Join Community</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <div><br/>
+                      <br/>
+                      <br/>
+                      <br/>
+                    </div>
+                 
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>              
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+/* Styling for the carousel container */
+#myCarousel {
+  width: 100%;
+  max-width: 800px; /* You can adjust the width as needed */
+  margin: 0 auto;
+}
+
+/* Styling for the carousel slides */
+.carousel-item {
+  text-align: center;
+  background-color: #f0f0f0; /* You can set a background color for the slides */
+}
+
+/* Styling for the carousel caption */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for caption */
+  color: #fff;
+  padding: 10px;
+}
+
+/* Styling for the carousel indicators (dots) */
+.carousel-indicators {
+  bottom: 20px; /* Adjust the position of the indicators */
+}
+
+/* Styling for the active indicator (dot) */
+.carousel-indicators .active {
+  background-color: #007bff; /* Active indicator color */
+}
+
+/* Styling for the carousel navigation arrows (optional) */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px;
+  height: 30px;
+  background-color: #007bff; /* Arrow background color */
+  color: #fff; /* Arrow color */
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Styling for the carousel navigation arrow icons (optional) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  background: no-repeat 50% / 50% 50%;
+}
+
+/* Additional styling for the carousel images (optional) */
+.carousel-item img {
+  width: 100%; /* Make images fill the slide width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional styling for the "Sign up today" button (optional) */
+.carousel-caption .btn {
+  margin-top: 10px;
+}
+
+/* Styling for the carousel slide indicator numbers (optional) */
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #888; /* Indicator number color */
+  border: none;
+}
+
+/* Styling for the active slide indicator number (optional) */
+.carousel-indicators .active {
+  background-color: #000; /* Active indicator number color */
+}
